@@ -2,6 +2,8 @@ package com.hxh.dao.impl;
 
 import com.hxh.dao.IAccountDao;
 import com.hxh.domain.Account;
+import com.hxh.service.IAccountService;
+import com.hxh.service.impl.AccountServiceImpl;
 import com.hxh.utils.ConnectionUtils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
@@ -16,8 +18,10 @@ import java.util.List;
  */
 public class AccountDaoImpl implements IAccountDao {
 
+
     private QueryRunner runner;
     private ConnectionUtils connectionUtils;
+
 
     public void setRunner(QueryRunner runner) {
 
@@ -80,4 +84,7 @@ public class AccountDaoImpl implements IAccountDao {
             throw new RuntimeException(e);
         }
     }
+   
+
+
 }

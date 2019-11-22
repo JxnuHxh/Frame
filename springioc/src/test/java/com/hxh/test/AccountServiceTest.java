@@ -1,6 +1,7 @@
 package com.hxh.test;
 
 import com.hxh.service.IAccountService;
+import com.hxh.service.impl.AccountServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class AccountServiceTest {
 
     @Autowired
-    private  IAccountService as;
+    private IAccountService as;
 
     @Test
     public  void testTransfer(){

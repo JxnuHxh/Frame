@@ -132,40 +132,38 @@ public class AccountServiceImpl implements IAccountService{
 
     public void transfer(String sourceName, String targetName, Float money) {
 
-        try{
+        try {
             System.out.println("断电1");
             //1.开启事务
             txManger.beginTransction();
             //2.执行操作
-                        // 1.根据名称查询转出账户
+            // 1.根据名称查询转出账户
 
-                        Account source =accountDao.findAccountByName(sourceName);
-                        //2.根据名称查询转入账户
-                        Account target =accountDao.findAccountByName(targetName);
-                        //3 转出账户扣钱
-                        source.setMoney(source.getMoney()-money);
-                        //4.转入账户加钱
-                        target.setMoney(target.getMoney()+money);
-                        //5.更新转出账户
-                        accountDao.updateAccount(source);
-                        //来个异常
-                        int i=1/0;
+            Account source = accountDao.findAccountByName(sourceName);
+            //2.根据名称查询转入账户
+            Account target = accountDao.findAccountByName(targetName);
+            //3 转出账户扣钱
+            source.setMoney(source.getMoney() - money);
+            //4.转入账户加钱
+            target.setMoney(target.getMoney() + money);
+            //5.更新转出账户
+            accountDao.updateAccount(source);
+            //来个异常
+            int i = 1 / 0;
 
-                        //6.更新转入账户
-                        accountDao.updateAccount(target);
-
-
+            //6.更新转入账户
+            accountDao.updateAccount(target);
 
 
             //3.提交事务
             txManger.commit();
 
 
-        }catch (Exception e){
+        } catch (Exception e) {
             //5.回滚操作
             txManger.rollback();
 
-        }finally {
+        } finally {
             //6.释放连接
             txManger.release();
         }
@@ -174,3 +172,5 @@ public class AccountServiceImpl implements IAccountService{
 
     }
 }
+
+
