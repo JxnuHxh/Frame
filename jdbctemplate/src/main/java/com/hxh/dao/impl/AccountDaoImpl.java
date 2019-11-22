@@ -4,6 +4,7 @@ import com.hxh.dao.IAccountDao;
 import com.hxh.service.Account;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import java.util.List;
 
@@ -31,5 +32,8 @@ public class AccountDaoImpl implements IAccountDao {
 
     public void updateAccount(Account account) {
 
+    }
+
+    public void setDataSource(DriverManagerDataSource dataSource) {
     }
 }
