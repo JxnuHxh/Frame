@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+             http://www.springframework.org/schema/aop
+              http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean id="accountService" class="com.hxh.service.impl.AccountServiceImpl"></bean>
+
+    <!--AOP配置
+    1.把通知bean交给spring来管理
+    2.使用aop:config标签表明开始AOP的配置
+    3.使用AOP：aspect标签表明切面配置
+         id属性：唯一标识
+         ref属性：指定通知类bean的ID
+    4.在AOP：aspect标签的内部使用对应的标签来配置通知的类型
+            aop:before 表示配置前置通知
+                  method 用于指定logger类中哪个方法是前置通知
+                  prointcut属性 用于指定切入点表达式，该表达式的含义指的是对业务中哪些方法增强
+ 返回值可以使用*号，表示任意返回值   * com.itheima.service.impl.AccountServiceImpl.saveAccount(com.itheima.domain.Account)
+ 包名可以使用*号，表示任意包，但是有几级包，需要写几个*   * *.*.*.*.AccountServiceImpl.saveAccount(com.itheima.domain.Account)
+ 使用..来表示当前包，及其子包   * com..AccountServiceImpl.saveAccount(com.itheima.domain.Account)
+ 类名可以使用*号，表示任意类   * com..*.saveAccount(com.itheima.domain.Account)
+ 方法名可以使用*号，表示任意方法   * com..*.*( com.itheima.domain.Account)
+ 参数列表可以使用*，表示参数可以是任意数据类型，但是必须有参数   * com..*.*(*)
+ 参数列表可以使用..表示有无参数均可，有参数可以是任意类型   * com..*.*(..)
+ 全通配方式：   * *..*.*(..)
+    -->
+    <bean id="logger" class="com.hxh.utils.Logger"></bean>
+    <aop:config>
+        <aop:aspect id="logAdvice" ref="logger">
+            <!--配置通知的类型，并且建立通知方法和切入点方法的关联 -->
+            <aop:before method="printLog" pointcut="execution(* com.hxh.service.impl.*.*(..))"></aop:before>
+        </aop:aspect>
+    </aop:config>
+</beans>
