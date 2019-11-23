@@ -3,7 +3,24 @@
 #### Mybatis   
 
 #### Spring
-程序的耦合也就是程序间的依赖关系   
+   spring框架的概述以及spring中基于XML的IOC配置  
+   spring中基于注解的IOC和ioc的案例 ioc作用是消减程序的耦合    
+   spring中的aop和基于XML以及注解的AOP配置  
+   spring中的JdbcTemlate以及Spring事务控制   
+-----------------------------------------------------
+1、spring的概述
+	spring是什么
+	spring的两大核心
+	spring的发展历程和优势
+	spring体系结构
+2、程序的耦合及解耦
+	曾经案例中问题
+	工厂模式解耦
+3、IOC概念和spring中的IOC
+	spring中基于XML的IOC环境搭建
+4、依赖注入（Dependency Injection）
+
+   程序的耦合也就是程序间的依赖关系   
     包括类之间的依赖关系 方法之间的依赖关系   
     如下没有驱动包就没法编译成功   
     解耦就是降低程序之间的依赖关系   
