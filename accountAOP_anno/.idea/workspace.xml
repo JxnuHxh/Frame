@@ -2,45 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db41c91a-b2da-4736-8474-200617a1f5d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/accountAOP_XML.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/src/main/java/com/itheima/dao/IAccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/src/main/java/com/itheima/dao/impl/AccountDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/src/main/java/com/itheima/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/src/main/java/com/itheima/service/IAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/src/main/java/com/itheima/utils/ConnectionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/src/main/java/com/itheima/utils/TransactionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/src/main/resources/bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../accountAOP_XML/src/test/java/com/itheima/test/AccountServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accountAOP_anno.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/IAccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/impl/AccountDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/service/IAccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/utils/ConnectionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/itheima/utils/TransactionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/itheima/test/AccountServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -67,6 +49,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -99,6 +82,9 @@
       <option name="presentableId" value="Default" />
       <updated>1574471432484</updated>
       <workItem from="1574471434089" duration="1061000" />
+      <workItem from="1574474874221" duration="174000" />
+      <workItem from="1574475063816" duration="95000" />
+      <workItem from="1574475173366" duration="766000" />
     </task>
     <servers />
   </component>
@@ -110,7 +96,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
